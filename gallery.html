@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery - Global Nomad Chronicles</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -30,81 +31,193 @@
         <h1>Photo Gallery</h1>
         <p>Visual stories from my travels and teaching experiences around the world.</p>
 
-        <!-- Gallery by Country -->
-        <section id="south-korea-gallery">
-            <h2>South Korea</h2>
-            <div class="photo-gallery">
-                <div class="photo-placeholder">
-                    <p>[Photo 1: Classroom in South Korea - to be added in Week 4]</p>
+        <!-- Photo Gallery Section -->
+        <section id="photo-gallery">
+            
+            <!-- Gallery Categories/Filters -->
+            <div class="gallery-categories">
+                <button class="gallery-filter active" data-filter="all">All Photos</button>
+                <button class="gallery-filter" data-filter="teaching">Teaching Moments</button>
+                <button class="gallery-filter" data-filter="cultural">Cultural Experiences</button>
+                <button class="gallery-filter" data-filter="landscapes">Landscapes</button>
+                <button class="gallery-filter" data-filter="food">Food Adventures</button>
+                <button class="gallery-filter" data-filter="south-korea">South Korea</button>
+                <button class="gallery-filter" data-filter="saudi-arabia">Saudi Arabia</button>
+                <button class="gallery-filter" data-filter="mexico">Mexico</button>
+                <button class="gallery-filter" data-filter="peru">Peru</button>
+                <button class="gallery-filter" data-filter="malaysia">Malaysia</button>
+                <button class="gallery-filter" data-filter="jordan">Jordan</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- South Korea Photos -->
+                <div class="gallery-item" data-category="teaching south-korea">
+                    <div class="photo-placeholder">
+                        <p>Teaching in Korean classroom</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Classroom in Seoul</h4>
+                        <p>Working with special needs students</p>
+                        <span class="gallery-location">📍 South Korea</span>
+                    </div>
                 </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 2: Cultural site in South Korea - to be added in Week 4]</p>
+                
+                <div class="gallery-item" data-category="cultural south-korea">
+                    <div class="photo-placeholder">
+                        <p>Korean cultural site</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Temple Discovery</h4>
+                        <p>Learning about Buddhist practices</p>
+                        <span class="gallery-location">📍 South Korea</span>
+                    </div>
                 </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 3: Students or school environment - to be added in Week 4]</p>
+                
+                <div class="gallery-item" data-category="food south-korea">
+                    <div class="photo-placeholder">
+                        <p>Korean BBQ experience</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Korean BBQ Night</h4>
+                        <p>Sharing meals with colleagues</p>
+                        <span class="gallery-location">📍 South Korea</span>
+                    </div>
+                </div>
+                
+                <!-- Saudi Arabia Photos -->
+                <div class="gallery-item" data-category="teaching saudi-arabia">
+                    <div class="photo-placeholder">
+                        <p>Teaching environment in Saudi Arabia</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Special Education Class</h4>
+                        <p>Adaptive learning in Dammam</p>
+                        <span class="gallery-location">📍 Saudi Arabia</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="landscapes saudi-arabia">
+                    <div class="photo-placeholder">
+                        <p>Saudi Arabian desert</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Desert Sunset</h4>
+                        <p>The beauty of the Arabian landscape</p>
+                        <span class="gallery-location">📍 Saudi Arabia</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cultural saudi-arabia">
+                    <div class="photo-placeholder">
+                        <p>Cultural landmark</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Cultural Festival</h4>
+                        <p>Participating in local celebrations</p>
+                        <span class="gallery-location">📍 Saudi Arabia</span>
+                    </div>
+                </div>
+                
+                <!-- Mexico Photos -->
+                <div class="gallery-item" data-category="cultural mexico">
+                    <div class="photo-placeholder">
+                        <p>Mexican cultural site</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Ancient Ruins</h4>
+                        <p>Exploring Mexico's rich history</p>
+                        <span class="gallery-location">📍 Mexico</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="teaching mexico">
+                    <div class="photo-placeholder">
+                        <p>Local education observation</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Educational Visit</h4>
+                        <p>Learning from Mexican educators</p>
+                        <span class="gallery-location">📍 Mexico</span>
+                    </div>
+                </div>
+                
+                <!-- Peru Photos -->
+                <div class="gallery-item" data-category="landscapes peru">
+                    <div class="photo-placeholder">
+                        <p>Peruvian landmark</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Machu Picchu</h4>
+                        <p>Ancient wonder of the world</p>
+                        <span class="gallery-location">📍 Peru</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cultural peru">
+                    <div class="photo-placeholder">
+                        <p>Cultural experience</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Local Market</h4>
+                        <p>Immersing in Peruvian culture</p>
+                        <span class="gallery-location">📍 Peru</span>
+                    </div>
+                </div>
+                
+                <!-- Malaysia Photos -->
+                <div class="gallery-item" data-category="cultural malaysia">
+                    <div class="photo-placeholder">
+                        <p>Malaysian cultural site</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Petronas Towers</h4>
+                        <p>Modern Malaysian architecture</p>
+                        <span class="gallery-location">📍 Malaysia</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="teaching malaysia">
+                    <div class="photo-placeholder">
+                        <p>Educational observation</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>School Visit</h4>
+                        <p>Learning Malaysian teaching methods</p>
+                        <span class="gallery-location">📍 Malaysia</span>
+                    </div>
+                </div>
+                
+                <!-- Jordan Photos -->
+                <div class="gallery-item" data-category="landscapes jordan">
+                    <div class="photo-placeholder">
+                        <p>Jordanian landmark</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Petra</h4>
+                        <p>The Rose City carved in stone</p>
+                        <span class="gallery-location">📍 Jordan</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="cultural jordan">
+                    <div class="photo-placeholder">
+                        <p>Cultural experience</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Bedouin Experience</h4>
+                        <p>Desert hospitality and traditions</p>
+                        <span class="gallery-location">📍 Jordan</span>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="saudi-arabia-gallery">
-            <h2>Saudi Arabia</h2>
-            <div class="photo-gallery">
-                <div class="photo-placeholder">
-                    <p>[Photo 1: Teaching environment in Saudi Arabia - to be added in Week 4]</p>
-                </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 2: Cultural landmark - to be added in Week 4]</p>
-                </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 3: Local experience - to be added in Week 4]</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="mexico-gallery">
-            <h2>Mexico</h2>
-            <div class="photo-gallery">
-                <div class="photo-placeholder">
-                    <p>[Photo 1: Mexican cultural site - to be added in Week 4]</p>
-                </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 2: Local education observation - to be added in Week 4]</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="peru-gallery">
-            <h2>Peru</h2>
-            <div class="photo-gallery">
-                <div class="photo-placeholder">
-                    <p>[Photo 1: Peruvian landmark - to be added in Week 4]</p>
-                </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 2: Cultural experience - to be added in Week 4]</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="malaysia-gallery">
-            <h2>Malaysia</h2>
-            <div class="photo-gallery">
-                <div class="photo-placeholder">
-                    <p>[Photo 1: Malaysian cultural site - to be added in Week 4]</p>
-                </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 2: Educational observation - to be added in Week 4]</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="jordan-gallery">
-            <h2>Jordan</h2>
-            <div class="photo-gallery">
-                <div class="photo-placeholder">
-                    <p>[Photo 1: Jordanian landmark - to be added in Week 4]</p>
-                </div>
-                <div class="photo-placeholder">
-                    <p>[Photo 2: Cultural experience - to be added in Week 4]</p>
+            
+            <!-- Image Modal for Full View -->
+            <div id="image-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img id="modal-image" src="" alt="">
+                    <div id="modal-caption"></div>
                 </div>
             </div>
         </section>
@@ -113,14 +226,37 @@
         <section id="featured-photos">
             <h2>Featured Photos</h2>
             <div class="featured-gallery">
-                <div class="photo-placeholder">
-                    <p>[Featured Photo 1: Best teaching moment - to be added in Week 4]</p>
+                <div class="gallery-item" data-category="teaching">
+                    <div class="photo-placeholder">
+                        <p>Best teaching moment</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Breakthrough Moment</h4>
+                        <p>When communication transcends language</p>
+                        <span class="gallery-location">📍 Featured</span>
+                    </div>
                 </div>
-                <div class="photo-placeholder">
-                    <p>[Featured Photo 2: Most memorable travel experience - to be added in Week 4]</p>
+                
+                <div class="gallery-item" data-category="cultural">
+                    <div class="photo-placeholder">
+                        <p>Most memorable travel experience</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Cultural Discovery</h4>
+                        <p>Finding home in unexpected places</p>
+                        <span class="gallery-location">📍 Featured</span>
+                    </div>
                 </div>
-                <div class="photo-placeholder">
-                    <p>[Featured Photo 3: Cultural discovery - to be added in Week 4]</p>
+                
+                <div class="gallery-item" data-category="landscapes">
+                    <div class="photo-placeholder">
+                        <p>Stunning landscape</p>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Breathtaking View</h4>
+                        <p>Nature's classroom around the world</p>
+                        <span class="gallery-location">📍 Featured</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,5 +267,7 @@
         <p>&copy; 2025 Global Nomad Chronicles. All rights reserved.</p>
         <p>Sharing stories of teaching, travel, and cultural discovery.</p>
     </footer>
+
+
 </body>
 </html>
