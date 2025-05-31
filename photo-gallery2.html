@@ -1,0 +1,79 @@
+<!-- Photo Gallery Section -->
+<section id="photo-gallery">
+    <h2>Photo Gallery</h2>
+    
+    <!-- Gallery Categories -->
+    <div class="gallery-categories">
+        <button class="gallery-filter active" data-filter="all">All Photos</button>
+        <button class="gallery-filter" data-filter="teaching">Teaching Moments</button>
+        <button class="gallery-filter" data-filter="cultural">Cultural Experiences</button>
+        <button class="gallery-filter" data-filter="landscapes">Landscapes</button>
+        <button class="gallery-filter" data-filter="food">Food Adventures</button>
+    </div>
+    
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+        <div class="gallery-item" data-category="teaching">
+            <img src="images/teaching-korea-1.jpg" alt="Teaching in Korean classroom" loading="lazy">
+            <div class="gallery-overlay">
+                <h4>Classroom in Seoul</h4>
+                <p>Working with special needs students</p>
+                <span class="gallery-location">📍 South Korea</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-category="cultural">
+            <img src="images/temple-visit.jpg" alt="Buddhist temple visit" loading="lazy">
+            <div class="gallery-overlay">
+                <h4>Temple Discovery</h4>
+                <p>Learning about Buddhist practices</p>
+                <span class="gallery-location">📍 South Korea</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-category="landscapes">
+            <img src="images/saudi-desert.jpg" alt="Saudi Arabian desert" loading="lazy">
+            <div class="gallery-overlay">
+                <h4>Desert Sunset</h4>
+                <p>The beauty of the Arabian landscape</p>
+                <span class="gallery-location">📍 Saudi Arabia</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-category="food">
+            <img src="images/korean-bbq.jpg" alt="Korean BBQ experience" loading="lazy">
+            <div class="gallery-overlay">
+                <h4>Korean BBQ Night</h4>
+                <p>Sharing meals with colleagues</p>
+                <span class="gallery-location">📍 South Korea</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-category="teaching">
+            <img src="images/saudi-classroom.jpg" alt="Teaching in Saudi Arabia" loading="lazy">
+            <div class="gallery-overlay">
+                <h4>Special Education Class</h4>
+                <p>Adaptive learning in Dammam</p>
+                <span class="gallery-location">📍 Saudi Arabia</span>
+            </div>
+        </div>
+        
+        <div class="gallery-item" data-category="cultural">
+            <img src="images/cultural-festival.jpg" alt="Cultural festival participation" loading="lazy">
+            <div class="gallery-overlay">
+                <h4>Cultural Festival</h4>
+                <p>Participating in local celebrations</p>
+                <span class="gallery-location">📍 Saudi Arabia</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Image Modal for Full View -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div id="modal-caption"></div>
+        </div>
+    </div>
+</section>
